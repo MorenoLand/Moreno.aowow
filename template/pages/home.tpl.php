@@ -10,6 +10,7 @@
 
 </head>
 <body class="home<?=($this->user::isPremium() ? ' premium-logo' : ''); ?>">
+    <div class="contain-bg"></div>
     <div id="layers"></div>
 <?php
 if ($this->homeTitle):

@@ -8,6 +8,7 @@
 </head>
 
 <body<?=($this->user::isPremium() ? ' class="premium-logo"' : ''); ?>>
+<div class="contain-bg"></div>
 <div id="layers"></div>
 <?php if ($this->headerLogo): ?>
 <style type="text/css">

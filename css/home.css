@@ -123,6 +123,7 @@
 
 body, html {
     height:100%;
+    background: transparent;
 }
 
 .home-footer {
