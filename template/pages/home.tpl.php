@@ -45,8 +45,10 @@ if ($this->altHomeLogo):
         <script type="text/javascript">//<![CDATA[
             <?=$this->oneliner; ?>
         //]]></script>
+<?php endif; ?>
 
-<?php elseif ($this->featuredBox): ?>
+<?php /* TEMPORARILY HIDDEN - Featured Box
+elseif ($this->featuredBox): ?>
        <div class="pad"></div>
 <?php
 endif;
@@ -69,7 +71,7 @@ if ($this->featuredBox):
 
 <?php
 endif;
-?>
+*/ ?>
         <script type="text/javascript">//<![CDATA[
 <?php
 if ($this->locale->value):
@@ -77,9 +79,11 @@ if ($this->locale->value):
 endif;
 echo $this->renderGlobalVars(12);
 
+/* TEMPORARILY HIDDEN - Featured Box markup
 if ($this->featuredBox):
     echo "            ".$this->featuredBox['markup'];
 endif;
+*/
 ?>
         //]]></script>
     </div>
@@ -88,7 +92,7 @@ endif;
 
     <div class="footer">
         <div class="footer-links linklist">
-            <a href="?aboutus"><?=Lang::main('aboutUs'); ?></a>|<a href="https://github.com/Sarjuuk/aowow" target="_blank">Github</a>|<a href="#" id="footer-links-language"><?=Lang::main('language'); ?></a>
+            <a href="?aboutus"><?=Lang::main('aboutUs'); ?></a><?php /* TEMPORARILY HIDDEN - GitHub link (custom branch) |<a href="https://github.com/Sarjuuk/aowow" target="_blank">Github</a> */ ?><?php /* TEMPORARILY HIDDEN - Language menu (English only) |<a href="#" id="footer-links-language"><?=Lang::main('language'); ?></a> */ ?>
         </div>
         <div class="footer-copy">
             &#12484; 2025 Aowow<br />rev. <?=AOWOW_REVISION; ?>

@@ -2,15 +2,16 @@
     namespace Aowow\Template;
 
     use \Aowow\Lang;
+    use \Aowow\Type;
 ?>
 
 <?php
-// link to wowhead
-if (isset($this->redButtons[BUTTON_WOWHEAD])):
+// Download button - only show on item detail pages
+if (isset($this->redButtons[BUTTON_WOWHEAD]) && isset($this->type) && $this->type == Type::ITEM && !empty($this->typeId)):
     if ($this->redButtons[BUTTON_WOWHEAD]):
-        echo '<a href="'.$this->wowheadLink.'" rel="np" referrerpolicy="no-referrer" class="button-red"><em><b><i>Wowhead</i></b><span>Wowhead</span></em></a>';
+        echo '<a href="https://lookup.moreno.land/generate.php?itemid='.$this->typeId.'&type=2" class="button-red"><em><b><i>Download</i></b><span>Download</span></em></a>';
     else:
-        echo '<a href="javascript:;" class="button-red button-red-disabled"><em><b><i>Wowhead</i></b><span>Wowhead</span></em></a>';
+        echo '<a href="javascript:;" class="button-red button-red-disabled"><em><b><i>Download</i></b><span>Download</span></em></a>';
     endif;
 endif;
 
@@ -28,7 +29,8 @@ if (isset($this->redButtons[BUTTON_LINKS])):
     endif;
 endif;
 
-// view in 3D
+// view in 3D - TEMPORARILY DISABLED
+/*
 if (isset($this->redButtons[BUTTON_VIEW3D])):
     if ($b = $this->redButtons[BUTTON_VIEW3D]):             // json_encode puts property names in brackets wich is not cool with inline javascript
         echo '<a href="javascript:;" id="view3D-button" class="button-red" onclick="this.blur(); ModelViewer.show('.strtr($this->json($b, JSON_NUMERIC_CHECK | JSON_UNESCAPED_UNICODE | JSON_HEX_APOS), ['"' => "'"]).')"><em><b><i>'.Lang::main('view3D').'</i></b><span>'.Lang::main('view3D').'</span></em></a>';
@@ -36,6 +38,7 @@ if (isset($this->redButtons[BUTTON_VIEW3D])):
         echo '<a href="javascript:;" id="view3D-button" class="button-red button-red-disabled"><em><b><i>'.Lang::main('view3D').'</i></b><span>'.Lang::main('view3D').'</span></em></a>';
     endif;
 endif;
+*/
 
 // item comparison tool
 if (isset($this->redButtons[BUTTON_COMPARE])):

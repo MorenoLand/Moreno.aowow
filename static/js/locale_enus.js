@@ -1072,20 +1072,20 @@ var mn_community = [
     [5,"Twitter Page","http://twitter.com",null,{tinyIcon: g_staticUrl + "/images/icons/twitter.png"}]
 ];
 var mn_more = [
-    [,"All About AoWoW"],
-    [0,"About Us & Contact","?aboutus"],
-    [3,"FAQ","?faq"],
-    [13,"Help",,[
-        [0,"Commenting and You","?help=commenting-and-you"],
-        [5,"Item Comparison","?help=item-comparison"],
-        [1,"Model Viewer","?help=modelviewer"],
-        [6,"Profiler","?help=profiler"],
-        [2,"Screenshots: Tips & Tricks","?help=screenshots-tips-tricks"],
-        [3,"Stat Weighting","?help=stat-weighting"],
-        [4,"Talent Calculator","?help=talent-calculator"],
-        [7,"Markup Guide","?help=markup-guide"]
-    ]],
-    [7,"What's New","?whats-new"],
+    [,"All About Moreno Land"],
+    // [0,"About Us & Contact","?aboutus"], // TEMPORARILY HIDDEN
+    // [3,"FAQ","?faq"], // TEMPORARILY HIDDEN
+    // [13,"Help",,[ // TEMPORARILY HIDDEN
+    //     [0,"Commenting and You","?help=commenting-and-you"],
+    //     [5,"Item Comparison","?help=item-comparison"],
+    //     [1,"Model Viewer","?help=modelviewer"],
+    //     [6,"Profiler","?help=profiler"],
+    //     [2,"Screenshots: Tips & Tricks","?help=screenshots-tips-tricks"],
+    //     [3,"Stat Weighting","?help=stat-weighting"],
+    //     [4,"Talent Calculator","?help=talent-calculator"],
+    //     [7,"Markup Guide","?help=markup-guide"]
+    // ]], // TEMPORARILY HIDDEN
+    // [7,"What's New","?whats-new"], // TEMPORARILY HIDDEN
     [,"Goodies"],
     [16, "Search Box","?searchbox"],
     [8,"Search Plugins","?searchplugins"],
@@ -1095,8 +1095,8 @@ var mn_more = [
 var mn_path = [
     [0, "Database",  null     , mn_database ],
     [1, "Tools",     null     , mn_tools    ],
-    [3, "Community", null     , mn_community],
-    [6, "Guides",    '?guides', mn_guides   ],
+    // [3, "Community", null     , mn_community], // TEMPORARILY HIDDEN
+    // [6, "Guides",    '?guides', mn_guides   ], // TEMPORARILY HIDDEN
     [2, "More",      null     , mn_more     ]
 /* Note: ID 4 is used by the Staff menu - Skip it. It's added by staff.js */
 ];

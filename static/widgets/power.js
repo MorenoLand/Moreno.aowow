@@ -1,9 +1,8 @@
 if (typeof $WH == "undefined") {
     $WH = { wowheadRemote: true };
 
-    /* custom */
-    var g_host      = 'http://wotlk.moreno.land';
-    var g_staticUrl = 'http://wotlk.moreno.land';
+    var g_host      = 'https://wotlk.moreno.land';
+    var g_staticUrl = 'https://wotlk.moreno.land';
 }
 
 if (typeof $WowheadPower == "undefined") {

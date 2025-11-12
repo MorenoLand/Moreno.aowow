@@ -2839,14 +2839,21 @@ span.breadcrumb-ellipsis {
 
 .footer {
     font-size: 11px;
-    color: #666;
+    color: #ffffff;
     text-align: center;
     padding: 50px 0;
+    background: transparent;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.footer-links {
+    display: none;
 }
 
 .footer-copy {
     margin-top: 1em;
-    color: #666666;
+    color: #ffffff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 td.screenshot-cell {

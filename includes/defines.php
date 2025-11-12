@@ -183,6 +183,7 @@ define('BUTTON_GUIDE_REPORT',              10);
 define('BUTTON_GUIDE_NEW',                 11);
 define('BUTTON_GUIDE_EDIT',                12);
 define('BUTTON_GUIDE_LOG',                 13);
+define('BUTTON_XMLDOWNLOAD',               14);
 
 // conditional information in template
 define('GLOBALINFO_SELF',                   0x1);           // id, name, icon

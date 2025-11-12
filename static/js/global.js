@@ -25315,19 +25315,21 @@ var PageTemplate = new function()
 
         // Guides
      // var guides = ['guides', 'My Guides', '?my-guides'];
-        var guides = ['guides', LANG.myguides, '?my-guides', null, {onBeforeShow: generateGuidesSubmenu} ];
-        menu.push(guides);
+        // TEMPORARILY HIDDEN - My Guides
+        // var guides = ['guides', LANG.myguides, '?my-guides', null, {onBeforeShow: generateGuidesSubmenu} ];
+        // menu.push(guides);
 
         addCharactersMenu(menu);
         addProfilesMenu(menu);
 
         // Premium Upgrade
-        var premiumUpgrade;
-        if (!g_user.premium)
-        {
-            premiumUpgrade = ['premium-upgrade', LANG.premiumupgrade, '?premium', null, {className: 'q7', checkedUrl: /premium/i}];
-            menu.push(premiumUpgrade);
-        }
+        // TEMPORARILY HIDDEN - Premium Upgrade
+        // var premiumUpgrade;
+        // if (!g_user.premium)
+        // {
+        //     premiumUpgrade = ['premium-upgrade', LANG.premiumupgrade, '?premium', null, {className: 'q7', checkedUrl: /premium/i}];
+        //     menu.push(premiumUpgrade);
+        // }
 
         // Sign Out
         menu.push(['sign-out', LANG.signout, '?account=signout']);

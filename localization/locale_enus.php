@@ -154,7 +154,7 @@ $lang = array(
             'searchbox'     => "Search Box",
             'tooltips'      => "Tooltips",
             'faq'           => "Frequently Asked Questions",
-            'aboutus'       => "What is AoWoW?",
+            'aboutus'       => "About Us",
             'searchplugins' => "Search Plugins",
             'privileges'    => "Privileges",
             'top-users'     => "Top Users",
@@ -899,7 +899,7 @@ $lang = array(
         'empty'         => '[span class=q0]<empty>[/span]'
     ),
     'account' => array(
-        'title'         => "Aowow Account",
+        'title'         => "Account",
         'email'         => "Email address",
         'continue'      => "Continue",
         'groups'        => array(
@@ -1360,7 +1360,7 @@ $lang = array(
             "No CAPTCHAs",                          "Comment votes worth more",                     null,                                               null,
             null,                                   "More votes per day",                           "Upvote comments",                                  "Downvote comments",
             "Post comment replies",                 "Border: Uncommon",                             "Border: Rare",                                     "Border: Epic",
-            "Border: Legendary",                    "AoWoW Premium"
+            "Border: Legendary",                    "Premium"
         )
     ),
     'zone' => array(

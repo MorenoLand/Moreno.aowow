@@ -126,6 +126,30 @@ body, html {
     background: transparent;
 }
 
+body.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+body.home .home-wrapper {
+    flex: 0 0 auto;
+    padding-top: 0;
+    margin-top: -100px;
+}
+
+body.home .footer {
+    display: none; /* TEMPORARILY HIDDEN */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
 .home-footer {
     width:500px;
     margin:0 auto;
